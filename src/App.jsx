@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div style={{ padding: "20px", background: "pink", minHeight: "100vh" }}>
-      <h1>✨ My Vision Board</h1>
+      <h1>✨ My 2026 Vision Board</h1>
 
       <input
         placeholder="Goal Title"
