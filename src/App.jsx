@@ -12,6 +12,9 @@ export default function App() {
     setTitle("");
     setImage("");
     setGoal("");
+    const clearAll = () => {
+  setItems([]);
+};
   };
 
   return (
@@ -40,6 +43,7 @@ export default function App() {
       <br /><br />
 
       <button onClick={addItem}>Add</button>
+      <button onClick={clearAll}>Clear All</button>
 
       <div style={{
         display: "grid",
