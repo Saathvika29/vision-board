@@ -69,6 +69,12 @@ export default function App() {
             )}
             <h3>{item.title}</h3>
             <p>{item.goal}</p>
+            <button onClick={() => {
+  const newItems = items.filter((_, index) => index !== i);
+  setItems(newItems);
+}}>
+  Delete
+</button>
           </div>
         ))}
       </div>
