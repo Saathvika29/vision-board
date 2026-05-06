@@ -59,13 +59,16 @@ export default function App() {
           }}>
             {item.image && (
               <img
-                src={item.image}
-                style={{
-                  width: "100%",
-                  height: "150px",
-                  objectFit: "cover"
-                }}
-              />
+  src={
+    item.image ||
+    "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  }
+  style={{
+    width: "100%",
+    height: "150px",
+    objectFit: "cover"
+  }}
+/>
             )}
             <h3>{item.title}</h3>
             <p>{item.goal}</p>
